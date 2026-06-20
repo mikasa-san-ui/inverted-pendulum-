@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Inverted Pendulum Project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-arduino-mega", "id": "mega", "top": 0, "left": 0, "attrs": {} },
+    { "type": "chip-as5600", "id": "as5600", "top": -150, "left": 50, "attrs": {} },
+    { "type": "chip-tmc2209", "id": "tmc2209", "top": -260, "left": -260, "attrs": {} },
+    { "type": "wokwi-stepper-motor", "id": "motor", "top": -260, "left": -480, "attrs": {} }
+  ],
+  "connections": [
+    [ "mega:5V", "as5600:VCC", "red", [ "v20" ] ],
+    [ "mega:GND.1", "as5600:GND", "black", [ "v0" ] ],
+    [ "mega:20", "as5600:SDA", "green", [ "v0" ] ],
+    [ "mega:21", "as5600:SCL", "yellow", [ "v0" ] ],
+    [ "mega:5V", "tmc2209:VIO", "red", [ "v0" ] ],
+    [ "mega:GND.2", "tmc2209:GND2", "black", [ "v0" ] ],
+    [ "mega:8", "tmc2209:EN", "orange", [ "v0" ] ],
+    [ "mega:3", "tmc2209:STEP", "blue", [ "v0" ] ],
+    [ "mega:4", "tmc2209:DIR", "purple", [ "v0" ] ],
+    [ "tmc2209:M1A", "motor:A+", "black", [ "v0" ] ],
+    [ "tmc2209:M1B", "motor:A-", "black", [ "v0" ] ],
+    [ "tmc2209:M2A", "motor:B+", "black", [ "v0" ] ],
+    [ "tmc2209:M2B", "motor:B-", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
