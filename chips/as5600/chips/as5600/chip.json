@@ -1,0 +1,6 @@
+{
+  "name": "AS5600 Magnetic Encoder",
+  "author": "Custom (Inverted Pendulum Project)",
+  "pins": ["VCC", "OUT", "GND", "DIR", "SCL", "SDA", "GPO"],
+  "controls": []
+}
