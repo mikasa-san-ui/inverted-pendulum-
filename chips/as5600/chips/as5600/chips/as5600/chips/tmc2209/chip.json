@@ -1,0 +1,6 @@
+{
+  "name": "TMC2209 Stepper Driver",
+  "author": "Custom (Inverted Pendulum Project)",
+  "pins": ["EN", "MS1", "MS2", "SPREAD", "PDN1", "PDN2", "STEP", "DIR", "VREF", "DIAG", "INDEX", "VM", "GND1", "M2B", "M2A", "M1A", "M1B", "VIO", "GND2"],
+  "controls": []
+}
